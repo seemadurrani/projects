@@ -1,0 +1,46 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sfluentd
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - services
+  - events
+  - endpoints
+  - pods
+  - nodes
+  - componentstatuses
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - configmaps
+  verbs:
+  - get
+  - update
+- apiGroups:  # To create the leader election token
+  - ""
+  resources:
+  - configmaps
+  verbs:
+  - create
+- nonResourceURLs:
+  - "/version"
+  - "/healthz"
+  - "/metrics"
+  verbs:
+  - get
+- apiGroups:  # Kubelet connectivity
+  - ""
+  resources:
+  - nodes/metrics
+  - nodes/spec
+  - nodes/proxy
+  - nodes/stats
+  verbs:
+  - get
