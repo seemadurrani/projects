@@ -62,6 +62,9 @@ Elasticsearch can be started and stopped as follows:
 
 ...
 
+service elasticsearch start
+service elasticsearch stop
+...
 
 
 
