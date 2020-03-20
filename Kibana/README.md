@@ -13,7 +13,7 @@ Update your apt package database:
 
 ```
 
-sudo apt-get update
+apt-get update
 ```
 
 Install Kibana with this command:
@@ -31,7 +31,7 @@ Open the Kibana configuration file for editing:
 
 ```
 
-    sudo vi /opt/kibana/config/kibana.yml
+     vi /opt/kibana/config/kibana.yml
 ```
 
 In the Kibana configuration file, find the line that specifies server.host, and replace the IP address (“0.0.0.0” by default) with “localhost”:
@@ -42,6 +42,6 @@ Now enable the Kibana service, and start it:
 
 ```
 
-    sudo update-rc.d kibana defaults 96 9
-    sudo service kibana start
+     update-rc.d kibana defaults 96 9
+     service kibana start
 ```
