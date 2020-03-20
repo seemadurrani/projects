@@ -20,7 +20,7 @@ The Elasticsearch official team provides an apt repository to install Elasticsea
 
 ``` 
 
-sudo apt-get install apt-transport-https
+apt-get install apt-transport-https
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 ```
 
@@ -35,8 +35,8 @@ After adding the repository to your system. Run the following commands to update
 
 ``` 
 
-sudo apt-get update
-sudo apt-get install elasticsearch
+apt-get update
+apt-get install elasticsearch
 ```
 
 #### Step 3 – Configure Elasticsearch
@@ -45,7 +45,7 @@ The Elasticsearch has been installed on your system. You can customize this by e
 
 ``` 
 
-sudo nano /etc/elasticsearch/elasticsearch.yml
+nano /etc/elasticsearch/elasticsearch.yml
 ```
 
 Change the following values:
