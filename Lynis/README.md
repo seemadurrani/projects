@@ -24,14 +24,20 @@ Since Lynis is flexible, it is used for several different purposes. Typical use 
 ## Installation using git
 
 * Step 1: Clone the following repository as the below command
+          
+         
           ```
           https://github.com/CISOfy/lynis.git
           ```
 * Step 2: Check if Lynis is installed by running the below command
+           
+           
            ```
            ./Lynis
            ```
 * Step 3: To start the scan you must be logged into the system in which the scan has to be done and run the below command.
-           ```
+          
+          
+            ```
            ./lynis audit system
            ```
