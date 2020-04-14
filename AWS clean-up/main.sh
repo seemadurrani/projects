@@ -2,12 +2,6 @@
 REGIONS="us-east-2  us-west-1"
 
 
-# Use mktemp to create files 
-#  Ue echo to say what is that am deleting 
-# echo use term colors Yellow for delete , Red for the headers
-# printf colorcodes
-# Error check
-
 check_for_error() {
 
 	status=$1
